@@ -4,8 +4,8 @@ int main(int ac, char **av)
 {
 	FILE *fp;
 	char line[1024];
-	long long int num;
 	long int f1, f2;
+	long long int num;
 
 	if (ac != 2)
 	{
@@ -38,4 +38,5 @@ int main(int ac, char **av)
 	fclose(fp);
 	return(0);
 		
+
 }
