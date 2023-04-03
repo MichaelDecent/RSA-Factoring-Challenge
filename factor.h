@@ -4,8 +4,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int find_factor2(long long int num, long int f1);
-int find_factor1(long long int num);
-int check_prime(long int n);
+typedef unsigned long long int ull;
+
+ull  find_factor2(ull num, ull f1);
+ull  find_factor1(ull num);
+int check_prime(ull n);
 
 #endif

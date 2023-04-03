@@ -1,11 +1,12 @@
 #include "factor.h"
+#include <gmp.h>
 
 int main(int ac, char **av)
 {
 	FILE *fp;
 	char line[1024];
-	long int f1, f2;
-	long long int num;
+	unsigned long long int f1, f2;
+	unsigned long long num;
 
 	if (ac != 2)
 	{
@@ -29,7 +30,7 @@ int main(int ac, char **av)
 				f2 = num / f1;
 				if (num % f2 == 0)
 				{
-					printf("%lld=%ld*%ld\n", num, f2, f1);
+					printf("%llu=%llu*%llu\n", num, f2, f1);
 					break;
 				}
 			}
@@ -37,6 +38,4 @@ int main(int ac, char **av)
 	}
 	fclose(fp);
 	return(0);
-		
-
 }
